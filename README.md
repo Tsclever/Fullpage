@@ -1,12 +1,17 @@
-# Fullpage
+# Fullpage.js
 ## 一、链入所需文件
 ```
-<!-- 导入jquery文件 -->
+<!-- 链入jquery文件 -->
   <script src="./jquery/jquery-3.6.0.min.js"></script>
-<!-- 导入fullpage文件 -->
+<!-- 链入fullpage文件 -->
   <link rel="stylesheet" href="./fullPage.js/src/csfullpage.css">
   <script src="./fullPage.js/vendors/easings.min.js">script>
   <script src="./fullPage.js/dist/fullpage.js"></script>
+
+<!-- 链入js文件文件 -->
+  <body>  
+    <script src="./index.js"></script>
+  </body>
 ```
 ## 二、HTML 默认代码
 ```
@@ -24,9 +29,9 @@
 ```
 ## 三、JS 初始化代码
 ```
- $(function(){
-	$('#fullpage').fullpage({
-		sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', '#f90']
-	});
-});
+  $(function(){
+	  $('#fullpage').fullpage({
+		  sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE','#f90']
+	  });
+  });
 ```
